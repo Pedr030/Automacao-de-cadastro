@@ -5,12 +5,11 @@ import time
 pyautogui.PAUSE = 0.4
 
 #Abrir no navegador
-
 pyautogui.press ("win")
 pyautogui.write ("chrome")
 pyautogui.press ("enter")
 
-#Entrar no site https://dlp.hashtagtreinamentos.com/python/intensivao/login
+#Entrar no site 
 time.sleep(1)
 pyautogui.click (x=513, y=52)
 pyautogui.write ("https://dlp.hashtagtreinamentos.com/python/intensivao/login")
