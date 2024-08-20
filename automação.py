@@ -45,7 +45,7 @@ for linha in tabela.index:
     pyautogui.write (str(tabela.loc[linha, "custo"]))
     pyautogui.press("tab")
     obs = tabela.loc[linha, "obs"]
-    if not pd.isna(obs): #olha se tem informação no "obs", se n tiver deixa em branco
+    if not pd.isna(obs): #Verifica se há informação no "obs", se n tiver deixa em branco
         pyautogui.write(str(tabela.loc[linha, "obs"]))
     pyautogui.click (x=600, y=499)
     pyautogui.scroll(5000)
